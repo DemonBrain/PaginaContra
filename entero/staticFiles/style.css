@@ -1,0 +1,42 @@
+body {
+    background-color: bisque;
+    margin: 0px 300px;
+}
+
+img {
+    margin-bottom: 30px;
+
+}
+
+.imgG{
+    width: auto;
+    height: 230px;
+}
+
+.imgP{
+    width: auto;
+    height: 350px;
+}
+
+.linea {
+    border-top: 1px solid rgb(171 158 158);
+    height: 2px;
+    padding: 0;
+    margin: 0px 200px 10px 200px;
+  }
+
+.texto{
+    justify-content: center;
+}  
+
+figure{
+    margin: 50px 200px;
+}
+
+.envio{
+    margin: 0px 300px;
+}
+
+.boton{
+    margin: 20px 45%;
+}
