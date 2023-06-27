@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="/staticFiles/style.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="/pregunta1.html" class="nav-link">Pregunta 1</a></li>
+          <li class="nav-item"><a href="/pregunta2.html" class="nav-link">Pregunta 2</a></li>
+          <li class="nav-item"><a href="/pregunta3.html" class="nav-link">Pregunta 3</a></li>
+          <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+        </ul>
+      </header>
+      <div class="linea"></div>
+    </div>
+
+    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+      <div class="col-lg-6 px-0">
+        <h1 class="display-4 fst-italic">Detector de contradicciones</h1>
+        <p class="lead my-3">Se propone un modelo capaz de inferir si un comentario asociado a una descripción contradice una premisa, o afirma en sobre ella.</p>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <div class="">
+  
+        <article class="blog-post">
+          <h2 class="display-5 link-body-emphasis mb-1">Diseño solución</h2>
+          
+
+          <hr>
+          
+          <h2>Dataset</h2>
+          <p>El dataset se obtuvo directamente desde Standford Natural Language Group:</p>
+          <img class="imgG" src="/staticFiles/dataset.png" >
+          <blockquote class="blockquote">
+            <p>Ejemplo</p>
+          </blockquote>
+          <img class="imgG" src="/staticFiles/datasetej.png" >
+          <h3>Pasos previos al modelo</h3>
+          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+          <ul>
+            <li>Se preprocesa el texto</li>
+            <li>Se crean las capas del modelo</li>
+            <li>Se fija la función de pérdida y el algoritmo de optimización</li>
+          </ul>
+    
+
+          <h2>Tokenización</h2>
+          <img class="imgG" src="/staticFiles/token.png" >
+          <img class="imgG" src="/staticFiles/tokeni.png" >
+          <h2>GloVe Embedding</h2>
+          <img class="imgP" src="/staticFiles/glove.png" >
+          <h2>Modelo</h2>
+          <img class="imgP" src="/staticFiles/modelo.jpeg" >
+          <pre><code>Example code block</code></pre>
+          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+          <h2>Resultado del entrenamiento.          </h2>
+          <img class="imgP" src="/staticFiles/grafi.jpeg" >
+          <img class="imgP" src="/staticFiles/grafico.jpeg" >
+          <img class="imgP" src="/staticFiles/matriz.jpeg" >
+          <h2>Además se hizo uso de:          </h2>
+
+          <dl>
+            <dt>HyperText Markup Language (HTML)</dt>
+            <dd>The language used to describe and define the content of a Web page</dd>
+            <dt>Cascading Style Sheets (CSS)</dt>
+            <dd>Used to describe the appearance of Web content</dd>
+            <dt>JavaScript (JS)</dt>
+            <dd>The programming language used to build advanced Web sites and applications</dd>
+          </dl>
+        </article>
+      </div>
+    </div>    
+
+
+
+
+
+    <div class="envio">
+      <form action="/respuesta" method="post">
+        <div class="mb-3">
+          <label for="premisa" class="form-label">Premisa:</label>
+          <textarea class="form-control" id="premisa" name="premisa" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="hipotesis" class="form-label">Hipótesis:</label>
+          <textarea class="form-control" id="hipotesis" name="hipotesis" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
