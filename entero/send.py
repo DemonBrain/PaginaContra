@@ -26,10 +26,12 @@ def pregunta3():
 def respuesta():
     premisa = request.form['premisa']
     hipotesis = request.form['hipotesis']
+
+    premisa = int(premisa)
     
     clasificacion = realizar_prediccion(premisas[premisa], hipotesis)
-    #return "<h1>" + premisa + "</h1>"
-    return clasificacion
+    #return "<h1>" + clasificacion + "</h1>"
+    return render_template('respuesta.html', clasificacion = clasificacion)
 
 if __name__ == '__main__':
     app.run(debug=True)
